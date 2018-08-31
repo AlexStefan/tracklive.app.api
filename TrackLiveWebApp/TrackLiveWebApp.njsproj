@@ -36,6 +36,9 @@
   </PropertyGroup>
   <ItemGroup>
     <TypeScriptCompile Include="server.ts" />
+    <Content Include="app.yaml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
