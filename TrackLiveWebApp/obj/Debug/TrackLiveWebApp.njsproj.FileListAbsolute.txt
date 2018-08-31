@@ -1,0 +1,2 @@
+C:\Users\RaduM\source\repos\tracklive.app\TrackLiveWebApp\TrackLiveWebApp\obj\Debug\TrackLiveWebApp.njsproj.CoreCompileInputs.cache
+C:\Users\RaduM\source\repos\tracklive.app\TrackLiveWebApp\TrackLiveWebApp\bin\Microsoft.NodejsTools.WebRole.dll

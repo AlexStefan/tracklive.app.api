@@ -1,0 +1,12 @@
+{
+  "name": "track-live-web-app",
+  "version": "0.0.0",
+  "description": "TrackLiveWebApp",
+  "main": "app.js",
+  "author": {
+    "name": "RaduM"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.87"
+  }
+}
