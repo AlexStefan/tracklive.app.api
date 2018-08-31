@@ -8,8 +8,10 @@
     "@types/node": "^6.0.87"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.ts"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.3"
+  },
   "license": "ISC"
 }
