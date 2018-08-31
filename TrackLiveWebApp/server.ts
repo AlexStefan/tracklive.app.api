@@ -1,6 +1,4 @@
-﻿import http = require('http');
-var port = process.env.port || 8080
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Welcome to TrackLiveApp!\n');
-}).listen(port);
+﻿const express = require('express')
+const app = express()
+app.get('/', (req, res) => res.send('Hello World!'))
+app.listen(3000, () => console.log('Example app listening on port 3000!'))
