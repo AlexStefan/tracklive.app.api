@@ -1,0 +1,9 @@
+{
+  "GCLOUD_PROJECT": "trackliveapp",
+  "CLOUD_BUCKET": "trackliveapp.appspot.com",
+  "DATA_BACKEND": "datastore",
+  "OAUTH2_CLIENT_ID": "729874258391-1bqinhqjpcqv423no85gmp0fkcfh7jk5.apps.googleusercontent.com",
+  "OAUTH2_CLIENT_SECRET": "cQVR2DeHuV4aTHUKWgxAUuRI",
+  "OAUTH2_CALLBACK": "http://localhost:8080/auth/google/callback"
+
+}

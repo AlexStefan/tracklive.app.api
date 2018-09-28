@@ -37,9 +37,6 @@ var express = require('express');
 var Datastore = require('@google-cloud/datastore');
 var Compute = require('google-auth-library').Compute;
 /**
- * Acquire a client, and make a request to an API that's enabled by default.
- */
-/**
 * Acquire a client, and make a request to an API that's enabled by default.
 */
 function main() {

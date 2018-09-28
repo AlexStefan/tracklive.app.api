@@ -4,9 +4,6 @@ const Datastore = require('@google-cloud/datastore');
 const { Compute } = require('google-auth-library');
 
 /**
- * Acquire a client, and make a request to an API that's enabled by default.
- */
-/**
 * Acquire a client, and make a request to an API that's enabled by default.
 */
 async function main() {
@@ -17,7 +14,7 @@ async function main() {
     });
     const projectId = 'TrackLive';
     const url = `https://www.googleapis.com/dns/v1/projects/${projectId}`;
-    const res = await client.request({ url });
+    const res = await client.request({url});
     console.log(res.data);
 }
 
