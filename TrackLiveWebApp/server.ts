@@ -4,7 +4,7 @@ const Datastore = require('@google-cloud/datastore');
 const app = express()
 
 const datastore = new Datastore({
-    keyFilename: 'TrackLive-9b74532bc6a2.json'
+    keyFilename: 'TrackLive-37a9de7817c3.json'
 });
 
 
@@ -23,7 +23,7 @@ const taskKey = datastore.key({
 const task = {
     key: taskKey,
     data: {
-        Name: 'Test1',
+        Name: 'Test1'
     },
 };
 
@@ -36,8 +36,22 @@ datastore
         console.error('ERROR:', err);
     });
 
-app.get('/trackings/:tagId/about', (req, res) => res.send(req.params.tagId));
-app.get('/trackings/:tagId/locations', (req, res) => res.send("location" + req.params.tagId));
+app.get('/trackings/:trackingCode', getTrackingInfo);
+
+function getTrackingInfo(req, res) {
+    console.log(req.params.trackingCode);
+    const query = datastore.createQuery('trackings').filter('__key__', '=', datastore.key(['trackings', req.params.trackingCode]));
+
+    datastore
+        .runQuery(query)
+        .then(results => {
+            const task = results[0][0];
+            res.json({ "id": req.params.trackingCode, "name": task.Name });
+        })
+        .catch(err => {
+            console.error('ERROR:', err);
+        });
+}
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
 
