@@ -3,25 +3,27 @@ const Datastore = require('@google-cloud/datastore');
 
 const app = express()
 
-const projectId = 'trackliveapp';
-
 const datastore = new Datastore({
-    keyFilename: 'TrackLive-2f3d510f8f06.json'
+    keyFilename: 'TrackLive-9b74532bc6a2.json'
 });
 
 
 // The kind for the new entity
 const kind = 'trackings';
 // The name/ID for the new entity
-const id = '5639445604728832';
+const id = '5629499534213121';
 // The Cloud Datastore key for the new entity
-const taskKey = datastore.key([kind, id]);
+
+const taskKey = datastore.key({
+    namespace: "TrackLiveStorage",
+    path: [kind, id]
+});
 
 // Prepares the new entity
 const task = {
     key: taskKey,
     data: {
-        Name: 'Test12324',
+        Name: 'Test1',
     },
 };
 
