@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "trackliveapp",
+  "private_key_id": "020395a5a644228530345d93e8ef38f4cd147bba",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCVfEIu68HcgP2K\njF3YkRIVU94aDgZJfiALCw3b03Kn6R0bFyoSIeXGcWhIGnwMsQXV/KZJhJi1m23F\nPNJmUT1r2FYio74/i5vmentXCHlpXK5EtfpHUHlyZd4kQbNacQEWTfyO2SNMXBX0\nrk6XGwva4/7fmz/eKZZooyTjefn1DSO6v03CwSWrUdzIPYgiJoLfEV7IZY8/cS0i\nusvUJE90YgCl4XLgiH/f/UZsH8y/LGTsBr82DPWMVfbbC2OUtbJ5jw4HCcxPHxCc\nzb8Z3Rhk8W0oVtiowr3a0w/Uz+FIXeVhKML2tlJmdIp7BhfHZYvOZXvnhpq7pXf2\nH/zOwMKdAgMBAAECggEADGRIVTzobWfI/Mj9h5QhEGELLpQ+i62XqOqx66jn3oj5\nx3LgYy/prQ1eJGoDogazseU3gK0r/pQDob/UvjQaWBwPKeByhzCCzDSXkGOssuIC\ntUHznSFL7AKLS2yh2ku3WBq/ZrUT0sLodAfWDnsovKy9RlqHjRpb9FEf3/aO1LQx\ncYG+E4dgvs1HwRN+EiLiB2Mq3zp1sTchdkpBgw1747LDKRd6Yj8vv7sBzSFVPT6c\n8IvhPdDwTpweJVAr/lEmwKsse8Lf5EZEaspPd5hVJq56jlujHPNKmbe7Q5rundRj\n16b2+3xjwB+rSw/ApR0nd6ZirLzstvZ5c9UkglDQEQKBgQDJTfEZw3JNi7D1MROh\nGJPAflYgKSWf6ke5oPdXAVSZjOVkzGGb/Or3wKSjdQeKOUvciGZyEVLkTeLJ12F6\nCGNysEMJPvma08iEwXAmqXFS6yQ0POfd+00BK3iLvvgZYahRYyvo32SrDM1AO0dT\nrVFqahzKyrtorNF0sUTguHAKkQKBgQC+GfT38JWquaT0V/lHH8UNyITywtup8BUl\nK8Gat+GtrEVyowgy4izCEv0B0If6xtFQyjfs11g5rAjnj29fb2fEyKcJ6Lakqd/9\ntjkZc2kuDL6LZugYTRnG3OGINFJDWPeWXqqzaBRlcC5wUv4BWsAw83tSDPHETiCN\n1tWOjCzFTQKBgB+25NYvQZHQATgP3EzUB2sbPExizyerjFNFddJCRmbOmNFRlcsy\nhH413npWFLMFJdt/rcwoyItpbeJoyVWlfq1x8Y3CWya2WO/5XcbpiQ4MN673LXx+\ne/pENACoPIQbK55u5lsQ3tZH9Qo6jJk1RA9k2lZkrDPojjM5PmW9CQHRAoGBALNX\nwaf3rPs30MtEA8R50GnEdsif1KRp/0jmEuxn9dzm3U3dSOrYPemKCG8h0GdiEi7p\n2AD02CLwjiYHR8b9TyRzOEM87LJEITE2LIA6RUxQcaMKHoRumJbn402gLsuir1GJ\nVfmTg0p/nxAQ+9lDSHXl/r3VwHC2VDf8KdUloUcxAoGAX/eOUmacW5WWMqi51Y4L\neNAFPZpG3xrSUL+xFNXTY0qsf5JzPFTWjjtuhDdfNXEzSessz+3L3eMA5+dvUh6f\nsTwbSMhtfe+4otZob0u2626pBM+wlsu0k5nQTeaQqONMEsdmuMDGX5aNz+ez2M2E\njD00rWdevSuTF0+Ix0uTVoo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "trackliveapp@appspot.gserviceaccount.com",
+  "client_id": "104233341907727934710",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/trackliveapp%40appspot.gserviceaccount.com"
+}

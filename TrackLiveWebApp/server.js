@@ -39,6 +39,9 @@ var Compute = require('google-auth-library').Compute;
 /**
  * Acquire a client, and make a request to an API that's enabled by default.
  */
+/**
+* Acquire a client, and make a request to an API that's enabled by default.
+*/
 function main() {
     return __awaiter(this, void 0, void 0, function () {
         var client, projectId, url, res;
@@ -48,9 +51,9 @@ function main() {
                     client = new Compute({
                         // Specifying the serviceAccountEmail is optional. It will use the default
                         // service account if one is not defined.
-                        serviceAccountEmail: 'radu.mazilu@ortec.com'
+                        serviceAccountEmail: 'bendincuta@gmail.com'
                     });
-                    projectId = 'trackingliveapp';
+                    projectId = 'TrackLive';
                     url = "https://www.googleapis.com/dns/v1/projects/" + projectId;
                     return [4 /*yield*/, client.request({ url: url })];
                 case 1:
@@ -70,9 +73,9 @@ var datastore = new Datastore({
 // The kind for the new entity
 var kind = 'trackings';
 // The name/ID for the new entity
-var name = '5639445604728832';
+var id = '5639445604728832';
 // The Cloud Datastore key for the new entity
-var taskKey = datastore.key([kind, name]);
+var taskKey = datastore.key([kind, id]);
 // Prepares the new entity
 var task = {
     key: taskKey,

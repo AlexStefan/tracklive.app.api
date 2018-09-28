@@ -1,18 +1,21 @@
-﻿const express = require('express')
-const Datastore = require('@google-cloud/datastore')
+﻿const express = require('express');
+const Datastore = require('@google-cloud/datastore');
 
 const { Compute } = require('google-auth-library');
 
 /**
  * Acquire a client, and make a request to an API that's enabled by default.
  */
+/**
+* Acquire a client, and make a request to an API that's enabled by default.
+*/
 async function main() {
     const client = new Compute({
         // Specifying the serviceAccountEmail is optional. It will use the default
         // service account if one is not defined.
-        serviceAccountEmail: 'radu.mazilu@ortec.com'
+        serviceAccountEmail: 'bendincuta@gmail.com'
     });
-    const projectId = 'trackingliveapp';
+    const projectId = 'TrackLive';
     const url = `https://www.googleapis.com/dns/v1/projects/${projectId}`;
     const res = await client.request({ url });
     console.log(res.data);
@@ -28,12 +31,13 @@ const datastore = new Datastore({
     projectId: projectId,
 });
 
+
 // The kind for the new entity
 const kind = 'trackings';
 // The name/ID for the new entity
-const name = '5639445604728832';
+const id = '5639445604728832';
 // The Cloud Datastore key for the new entity
-const taskKey = datastore.key([kind, name]);
+const taskKey = datastore.key([kind, id]);
 
 // Prepares the new entity
 const task = {
@@ -55,7 +59,7 @@ datastore
 app.get('/trackings/:tagId/about', (req, res) => res.send(req.params.tagId));
 app.get('/trackings/:tagId/locations', (req, res) => res.send("location" + req.params.tagId));
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(3000, () => console.log('Example app listening on port 3000!'));
 
 
 
