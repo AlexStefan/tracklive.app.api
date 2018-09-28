@@ -49,12 +49,11 @@ function getTrackingInfo(req, res) {
             res.json({ "id": req.params.trackingCode, "name": task.Name });
         })
         .catch(err => {
-            res.json({ "error": "Unable to find any trackingCode with the specified ID." });
-            console.error('ERROR:', err);
+            res.status(404).json({ "error": "100", "message": "Unable to find any trackingCode with the specified ID." });
         });
 }
 
-app.listen(8080, () => console.log('Example app listening on port 3000!'));
+app.listen(8080, () => console.log('Example app listening on port 8080!'));
 
 
 
