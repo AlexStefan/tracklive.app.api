@@ -1,31 +1,12 @@
 ﻿const express = require('express');
 const Datastore = require('@google-cloud/datastore');
 
-const { Compute } = require('google-auth-library');
-
-/**
-* Acquire a client, and make a request to an API that's enabled by default.
-*/
-async function main() {
-    const client = new Compute({
-        // Specifying the serviceAccountEmail is optional. It will use the default
-        // service account if one is not defined.
-        serviceAccountEmail: 'bendincuta@gmail.com'
-    });
-    const projectId = 'TrackLive';
-    const url = `https://www.googleapis.com/dns/v1/projects/${projectId}`;
-    const res = await client.request({url});
-    console.log(res.data);
-}
-
-main().catch(console.error);
-
 const app = express()
 
 const projectId = 'trackliveapp';
 
 const datastore = new Datastore({
-    projectId: projectId,
+    keyFilename: 'TrackLive-2f3d510f8f06.json'
 });
 
 

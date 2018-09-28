@@ -6,3 +6,4 @@ D:\BeniaminD\Documents\GitHub\tracklive.app\TrackLiveWebApp\TrackLiveWebApp\obj\
 D:\BeniaminD\Documents\GitHub\tracklive.app\TrackLiveWebApp\TrackLiveWebApp\bin\Microsoft.NodejsTools.WebRole.dll
 D:\BeniaminD\Documents\GitHub\tracklive.app.api\TrackLiveWebApp\obj\Debug\TrackLiveWebApp.njsproj.CoreCompileInputs.cache
 D:\BeniaminD\Documents\GitHub\tracklive.app.api\TrackLiveWebApp\bin\Microsoft.NodejsTools.WebRole.dll
+D:\BeniaminD\Documents\GitHub\tracklive.app.api\TrackLiveWebApp\obj\Debug\TrackLiveWebApp.njsprojResolveAssemblyReference.cache
