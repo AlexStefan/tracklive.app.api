@@ -2,3 +2,5 @@
 TrackLiveWebApp/node_modules/.bin/*
 
 TrackLiveWebApp/obj/Debug/*
+TrackLiveWebApp/server.js
+TrackLiveWebApp/server.js.map
