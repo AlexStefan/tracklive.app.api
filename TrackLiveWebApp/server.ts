@@ -6,7 +6,7 @@ const app = express()
 const projectId = 'trackliveapp';
 
 const datastore = new Datastore({
-    keyFilename: 'TrackLive-9b74532bc6a2.json'
+    keyFilename: 'TrackLive-37a9de7817c3.json'
 });
 
 /*
@@ -44,13 +44,6 @@ function getTrackingInfo(req, res) {
         .runQuery(query)
         .then(results => {
             const task = results[0][0];
-
-            /*tasks.forEach(task => {
-                const taskKey = task[datastore.KEY];
-                console.log(taskKey.id, task);
-            });*/
-            let name = task.Name;
-            let id = task.Key.name;
             res.json({ "id": req.params.trackingCode, "name": task.Name });
         })
         .catch(err => {
