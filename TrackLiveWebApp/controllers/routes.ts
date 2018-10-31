@@ -1,37 +1,8 @@
-﻿export const express = require('express')
-export const routes = express();
+﻿import { app } from "../server";
 
 var datastore = require('../database');
 
-// The kind for the new entity
-const kind = 'trackings';
-// The name/ID for the new entity
-const id = '5629499534213121';
-// The Cloud Datastore key for the new entity
-
-const taskKey = datastore.key({
-    namespace: "TrackLiveStorage",
-    path: [kind, id]
-});
-
-// Prepares the new entity
-const task = {
-    key: taskKey,
-    data: {
-        Name: 'Test1'
-    },
-};
-
-datastore
-    .save(task)
-    .then(() => {
-        console.log(`Saved ${task.key.name}: ${task.data.Name}`);
-    })
-    .catch(err => {
-        console.error('ERROR:', err);
-    });
-
-routes.get('/trackings', getAllTrackingInfo);
+app.get('/trackings', getAllTrackingInfo);
 
 function getAllTrackingInfo(req, res) {
     console.log(req.params.trackingCode);
@@ -53,7 +24,7 @@ function getAllTrackingInfo(req, res) {
         });
 }
 
-routes.get('/trackings/:trackingCode', getTrackingInfo);
+app.get('/trackings/:trackingCode', getTrackingInfo);
 
 function getTrackingInfo(req, res) {
     console.log(req.params.trackingCode);
@@ -67,5 +38,37 @@ function getTrackingInfo(req, res) {
         })
         .catch(err => {
             res.status(404).json({ "error": "100", "message": "Unable to find any trackingCode with the specified ID." });
+        });
+}
+
+app.post('/trackings/:trackingCode/location', postTrackingInfo);
+
+function postTrackingInfo(req, res) {
+    // The kind for the new entity
+    const kind = 'trackings';
+    // The name/ID for the new entity
+    const id = '5629499534213129';
+    // The Cloud Datastore key for the new entity
+
+    const taskKey = datastore.key({
+        namespace: "TrackLiveStorage",
+        path: [kind, id]
+    });
+
+    // Prepares the new entity
+    const task = {
+        key: taskKey,
+        data: {
+            Name: 'Radul'
+        },
+    };
+
+    datastore
+        .save(task)
+        .then(() => {
+            console.log(`Saved ${task.key.name}: ${task.data.Name}`);
+        })
+        .catch(err => {
+            console.error('ERROR:', err);
         });
 }

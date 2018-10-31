@@ -1,5 +1,5 @@
 ﻿var express = require('express');
-var app = express();
+export var app = express();
 
 require("./controllers/routes");
 
