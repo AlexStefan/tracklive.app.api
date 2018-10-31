@@ -36,6 +36,28 @@ datastore
         console.error('ERROR:', err);
     });
 
+app.get('/trackings', getAllTrackingInfo);
+
+function getAllTrackingInfo(req, res) {
+    console.log(req.params.trackingCode);
+    const query = datastore.createQuery('trackings').limit(10);
+
+    datastore
+        .runQuery(query)
+        .then(results => {
+            const trackings = results[0];
+            let trackingsArray: any[] = new Array();
+
+            trackings.forEach(tracking => {
+                trackingsArray = trackingsArray.concat(Array.of({ "id": tracking[datastore.KEY].name, "name": tracking.Name }));
+            });
+            res.json(trackingsArray);
+        })
+        .catch(err => {
+            res.status(404).json({ "error": "100", "message": err.message });
+        });
+}
+
 app.get('/trackings/:trackingCode', getTrackingInfo);
 
 function getTrackingInfo(req, res) {
