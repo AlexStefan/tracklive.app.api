@@ -45,9 +45,9 @@ app.post('/trackings/:trackingCode/location', postTrackingInfo);
 
 function postTrackingInfo(req, res) {
     // The kind for the new entity
-    const kind = 'trackings';
+    const kind = 'locations';
     // The name/ID for the new entity
-    const id = '5629499534213129';
+    const id = '12345';
     // The Cloud Datastore key for the new entity
 
     const taskKey = datastore.key({
@@ -59,7 +59,7 @@ function postTrackingInfo(req, res) {
     const task = {
         key: taskKey,
         data: {
-            Name: 'Radul'
+            Name: 'Radu'
         },
     };
 
